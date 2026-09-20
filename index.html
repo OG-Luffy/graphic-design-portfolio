@@ -38,26 +38,6 @@ html,body{width:100%;min-width:0}body{overflow-x:hidden;position:relative;backgr
   .mobile-menu a{display:block!important;position:relative!important;z-index:100004!important;background:#09090c!important;color:#fff!important;opacity:1!important}
   main{position:relative;z-index:1}
 }
-</style><style id="luffy-mascot-css">
-#luffy-mascot{position:fixed;left:-170px;top:18vh;width:150px;height:210px;z-index:9990;pointer-events:none;mix-blend-mode:screen;animation:luffyRoam 24s linear infinite;filter:drop-shadow(0 12px 18px rgba(0,0,0,.45))}
-#luffy-mascot img{width:100%;height:100%;object-fit:contain;display:block;background:transparent;border:0}
-#luffy-bubble{position:absolute;top:8px;right:-72px;padding:7px 10px;border:1px solid #ffffff22;border-radius:999px;background:#09090ddd;color:#fff;font:700 10px Inter,sans-serif;white-space:nowrap;animation:luffyBubble 24s linear infinite}
-@keyframes luffyRoam{
-0%{left:-170px;top:18vh;transform:rotate(-8deg) scale(1)}
-10%{left:12vw;top:10vh;transform:rotate(8deg) scale(1.02)}
-20%{left:28vw;top:24vh;transform:rotate(-12deg) scale(1)}
-30%{left:45vw;top:12vh;transform:rotate(10deg) scale(1.08,1)}
-40%{left:63vw;top:30vh;transform:rotate(-8deg) scale(1)}
-50%{left:78vw;top:18vh;transform:rotate(12deg) scale(1.02)}
-60%{left:86vw;top:48vh;transform:rotate(180deg) scale(1)}
-70%{left:67vw;top:62vh;transform:rotate(172deg) scale(1.15,1)}
-80%{left:44vw;top:50vh;transform:rotate(188deg) scale(1)}
-90%{left:20vw;top:68vh;transform:rotate(175deg) scale(1.03)}
-100%{left:-170px;top:30vh;transform:rotate(360deg) scale(1)}
-}
-@keyframes luffyBubble{0%,18%{opacity:1}20%,38%{opacity:0}40%,58%{opacity:1}60%,78%{opacity:0}80%,98%{opacity:1}100%{opacity:0}}
-@media(max-width:800px){#luffy-mascot{width:105px;height:150px;z-index:9990}#luffy-bubble{font-size:8px;right:-55px;padding:5px 7px}}
-@media(prefers-reduced-motion:reduce){#luffy-mascot{animation:none;left:auto;right:8px;top:70px}#luffy-bubble{animation:none}}
 </style></head>
 <body>
 <header class="nav"><div class="container nav-inner"><a class="brand" href="#home">KXEM0<i>DESIGN</i></a><nav class="links"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#reviews">Rating</a><a href="#contact">Contact</a></nav><div class="nav-actions"><a class="cta nav-cta" href="#contact">Start a project ↗</a><img class="top-profile" src="https://raw.githubusercontent.com/OG-Luffy/graphic-design-portfolio/main/assets/profile.jpg" alt="Emo profile"><button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div></div><div class="mobile-menu" id="mobileMenu"><a href="#home">Home</a><a href="#work">Works</a><a href="#about">About</a><a href="#reviews">Rating</a><a href="#contact">Contact</a></div></header>
@@ -75,5 +55,5 @@ html,body{width:100%;min-width:0}body{overflow-x:hidden;position:relative;backgr
 <script>document.addEventListener('click',function(e){const el=e.target.closest('button,.cta,.links a');if(!el)return;el.classList.remove('click-pulse');void el.offsetWidth;el.classList.add('click-pulse')})</script>
 
 
-<script>(function(){const b=document.getElementById('menuToggle'),m=document.getElementById('mobileMenu');if(!b||!m)return;function setMenu(open){m.classList.toggle('open',open);b.classList.toggle('open',open);b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Close menu':'Open menu');}b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();setMenu(!m.classList.contains('open'));});b.addEventListener('touchend',function(e){e.preventDefault();e.stopPropagation();setMenu(!m.classList.contains('open'));},{passive:false});m.addEventListener('click',function(e){e.stopPropagation();const a=e.target.closest('a');if(a)setMenu(false);});setMenu(false);})();</script><div id="luffy-mascot" aria-hidden="true"><img src="https://raw.githubusercontent.com/OG-Luffy/graphic-design-portfolio/main/assets/luffy.avif" alt="Luffy" onerror="this.onerror=null;this.src='https://www.clipartmax.com/png/middle/258-2583943_one-piece-luffy-transparent-png-pirate-warriors-one-piece-monkey-d-luffy.png'"><span id="luffy-bubble">YOSHA! 👒</span></div></body></html>
+<script>(function(){const b=document.getElementById('menuToggle'),m=document.getElementById('mobileMenu');if(!b||!m)return;function setMenu(open){m.classList.toggle('open',open);b.classList.toggle('open',open);b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Close menu':'Open menu');}b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();setMenu(!m.classList.contains('open'));});b.addEventListener('touchend',function(e){e.preventDefault();e.stopPropagation();setMenu(!m.classList.contains('open'));},{passive:false});m.addEventListener('click',function(e){e.stopPropagation();const a=e.target.closest('a');if(a)setMenu(false);});setMenu(false);})();</script></body></html>
 <!-- GitHub Pages deployment refresh: 2026-09-19 -->
